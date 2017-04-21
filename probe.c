@@ -86,3 +86,10 @@ Run 9: 7807428
 //top
 //interactive command '1' shows processor states
 
+static unsigned int log2(unsigned int val){
+  unsigned int count = 0;
+  while(val >>= 1){
+    ++count;
+  }
+  return count;
+}
