@@ -36,7 +36,7 @@ unsigned long long start_t, end_t, total_t, average = 0;
    		{
    		}
    		end_t = rdtscp();
-   		total_t = (1000*(end_t-start_t)/(unsigned long long)CLOCKS_PER_SEC);
+   		total_t = (end_t-start_t);
    		average += total_t;
    		printf("Run %d: %llu\n", j, total_t);
 	}
@@ -82,4 +82,7 @@ Run 7: 7615559
 Run 8: 7844114
 Run 9: 7807428
 */
+
+//top
+//interactive command '1' shows processor states
 
